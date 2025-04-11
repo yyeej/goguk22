@@ -1,20 +1,4 @@
-let qaData = [
-    {
-      question: "AI란 무엇인가요?",
-      answer: "AI는 인공지능으로, 컴퓨터가 사람처럼 학습하고 추론하는 기술입니다.",
-      category: "tech"
-    },
-    {
-      question: "빛은 파동인가요, 입자인가요?",
-      answer: "둘 다입니다. 빛은 파동성과 입자성을 동시에 지닙니다.",
-      category: "science"
-    },
-    {
-      question: "비밀번호를 잊어버렸어요.",
-      answer: "관리자에게 문의해 주세요.",
-      category: "hot"
-    }
-  ];
+let qaData = [];
   
   let isLoggedIn = localStorage.getItem("loggedIn") === "true";
   let currentCategory = null;
