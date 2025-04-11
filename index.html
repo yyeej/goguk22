@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>고것을 알려드림</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>고것을 알려드림</h1>
+    <div class="admin-controls">
+      <button id="adminLoginBtn">대구상원고</button>
+      <button id="logoutBtn" style="display:none;">로그아웃</button>
+    </div>
+  </header>
+
+  <section class="categories">
+    <button class="category" data-category="location">학교 시설</button>
+    <button class="category" data-category="schedule">일정</button>
+    <button class="category" data-category="hot">입시</button>
+  </section>
+
+  <section id="questionList"></section>
+
+  <section id="adminPanel" style="display: none;">
+    <h3>질문 추가</h3>
+    <form id="addForm">
+        <input type="text" id="newQuestion" placeholder="질문 입력" required />
+        <input type="text" id="newAnswer" placeholder="답변 입력" required />
+      
+        <!-- 이미지 추가 섹션 -->
+        <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+          <input type="url" id="newImageUrl" placeholder="(선택) 이미지 URL 입력" style="flex: 1;" />
+          <button type="button" id="addImageBtn">이미지 추가</button>
+        </div>
+      
+        <!-- 이미지 미리보기 -->
+        <img id="imagePreview" src="" alt="미리보기 이미지" style="max-width: 100%; margin-top: 0.5rem; display: none;" />
+      
+        <select id="newCategory">
+          <option value="location">학교 시설</option>
+          <option value="schedule">일정</option>
+          <option value="hot">입시</option>
+        </select>
+      
+        <button type="submit">질문 추가</button>
+      </form>                  
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

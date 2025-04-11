@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Do Hyeon", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+    color: #333;
+  }
+  
+  header {
+    background: #086044;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 3.0rem;
+    margin: 0;
+  }
+  
+  .admin-controls {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+  
+ 
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .category {
+    padding: 0.5rem 1rem;
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 0.95rem;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  #questionList {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .question-item {
+    font-family: "Gowun Dodum", sans-serif;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #fff;
+  }
+  
+  .question-item details summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.05rem;
+  }
+  
+  .admin-controls button {
+    font-family: "Gowun Dodum", sans-serif;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 20px; /* 둥글게 */
+  }
+  
+  /* 관리자 폼 스타일 */
+  #adminPanel {
+    font-family: "Gowun Dodum", sans-serif;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  form input, form select, form button {
+    display: block;
+    font-family: "Gowun Dodum", sans-serif;
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    width: 75%;
+    font-size: 1rem;
+  }
+
+  .container h2 {
+    font-family: "Do Hyeon", sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .container input,
+  .container button {
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 1rem;
+  }
+
+  /* 모바일 반응형 */
+  @media screen and (max-width: 600px) {
+    header h1 {
+      font-size: 1.0rem;
+    }
+  
+    .category {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .admin-controls {
+      position: static;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+  
+    #questionList, #adminPanel {
+      padding: 1rem;
+    }
+  
+    form input, form select, form button {
+      font-size: 0.95rem;
+    }
+  }
+
